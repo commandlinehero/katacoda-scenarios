@@ -3,9 +3,6 @@
   "description": "Your First Scenario",
   "difficulty": "beginner",
   "time": "2 minutes",
-  "backend": {
-    "imageid": "rhel"
-  },
   "details": {
     "steps": [{
       "title": "Step 1 - Run Command",
@@ -24,6 +21,6 @@
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "bash"
+    "imageid": "centos"
   }
 }
