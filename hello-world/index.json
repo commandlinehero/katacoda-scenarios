@@ -14,7 +14,7 @@ os{
     },
     "finish": {
       "text": "finish.md"
-    }
+    },
   },
   "environment": {
     "uilayout": "terminal",
@@ -22,5 +22,5 @@ os{
   },
   "backend": {
     "imageid": "coreos"
-  }
+  },
 }
