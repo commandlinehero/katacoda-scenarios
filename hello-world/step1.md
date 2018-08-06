@@ -11,16 +11,16 @@ Alternatively, to generate an Ansible playbook based on a profile (for example, 
 
 To generate an Ansible playbook based on the results of a scan, enter the following command:
 
-$ oscap xccdf generate fix --fix-type ansible \
+`oscap xccdf generate fix --fix-type ansible \
 --result-id "" \
 --output stig-playbook-result.yml \
-results.xml
+results.xml`{{execute}}
 
 where the results.xml file contains results of the scan obtained when scanning with the –results option and the result-id option contains an ID of the TestResult component in the file with results. In the example, above, we are using empty result-id. This is a trick to avoid specifying the full result ID.
 
 To apply the Ansible playbook, enter the following command:
 
-$ ansible-playbook -i inventory.ini stig-playbook-result.yml
+`ansible-playbook -i inventory.ini stig-playbook-result.yml`{{execute}}
 
 Note that the ansible-playbook command is provided by the ansible package. See the ansible-playbook(1) man page and the Ansible Tower User Guide for more information.
 
@@ -30,19 +30,11 @@ The OpenSCAP scanner and SCAP content are provided in a container image that all
 
 For example, here is how to scan the container for configuration compliance to the RHEL 7 DISA STIG profile.
 
-$ sudo atomic scan --scan_type configuration_compliance \
- --scaner_args profile=stig-rhel7-disa, report registry.access.redhat.com/rhel7:latest
+`sudo atomic scan --scan_type configuration_compliance \
+ --scaner_args profile=stig-rhel7-disa, report registry.access.redhat.com/rhel7:latest`{{execute}}
 
 To remediate docker-formatted container images to the specified policy, you need to add the –remediate option to the atomic scan command when scanning for configuration compliance. The following command builds a new remediated container image compliant with the DISA STIG policy from the Red Hat Enterprise Linux 7 container image:
 
-$ sudo atomic scan --remediate --scan_type configuration_compliance \
+`sudo atomic scan --remediate --scan_type configuration_compliance \
 --scanner_args profile=xccdf_org.ssgproject.content_profile_stig-rhel7-disa,report \
-registry.access.redhat.com/rhel7:latest
-
-This is your first step.
-
-## Task
-
-This is an _example_ of creating a scenario and running a **command**
-
-`echo 'Hello World'`{{execute}}
+registry.access.redhat.com/rhel7:latest`{{execute}}
