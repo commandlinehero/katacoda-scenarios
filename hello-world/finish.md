@@ -1,1 +1,5 @@
-You've completed your first Katacoda scenario!
+Finally, in order to automate security and compliance at scale for hybrid environments, you will need an automation strategy that includes products and tools that will help you scan and remediate more than a single machine at a time. For example, you can use OpenSCAP with a combination of Red Hat’s Management Portfolio, which includes Red Hat CloudForms, Red Hat Ansible Automation, Red Hat Satellite , and Red Hat Insights. Using OpenSCAP with these Red Hat Management portfolio projects, you can automate security and compliance at scale for your hybrid environment.
+
+The built-in security automation capabilities of Red Hat Enterprise Linux with the integration of OpenSCAP with Red Hat Ansible Automation gives you the flexibility and ease of automating security compliance. This integration also provides the secure foundation to do security automation at scale by extending these built-in capabilities with Red Hat’s management portfolio.
+
+Learn more in this webcast: [Automating Security Compliance with Ease](https://www.redhat.com/en/events/automating-security-compliance-ease).
