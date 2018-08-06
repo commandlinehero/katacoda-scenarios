@@ -1,11 +1,11 @@
 {
-  "title": "Hello World Scenario",
-  "description": "Your First Scenario",
+  "title": "Automating Security Compliance with Ease",
+  "description": "As hybrid IT environments continue to expand and evolve, security must be automated to scale and mitigate risks to achieve compliance and meet the needs of the business.",
   "difficulty": "beginner",
-  "time": "2 minutes",
+  "time": "5 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "Step 1 - Security Automation with Ansible and OpenSCAP",
       "text": "step1.md"
     }],
     "intro": {
@@ -18,7 +18,7 @@
   },
   "environment": {
     "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nSecurity Automation with Ansible and OpenSCAP\u001b[m\r\n"
   },
   "backend": {
     "imageid": "rhel"
