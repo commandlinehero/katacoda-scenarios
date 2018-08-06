@@ -1,3 +1,5 @@
+Testing
+
 Organizations today are seeking to increase productivity, flexibility and innovation to deliver services faster without sacrificing security, stability and performance. As hybrid IT environments continue to expand and evolve, security must be automated to scale and mitigate risks to achieve compliance and meet the needs of the business.
 
 Why should security and compliance be automated? According to the 2017 Verizon Data Breach Report, “81% of hacking-related breaches leveraged either stolen and/or weak passwords”. Ensuring protection against stolen and/or weak passwords is preventable by defining and implementing strong password policies using automation. In this article by Gartner, “99% of the vulnerabilities exploited by the end of 2020 will continue to be ones known by security and IT professionals at the time of the incident”.  Automation can help enforce and ensure security and compliance and help protect against security vulnerabilities and security breaches.
