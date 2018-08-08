@@ -11,13 +11,13 @@ Alternatively, to generate an Ansible playbook based on a profile (for example, 
 
 If, on the other hand, you want to generate an Ansible playbook based on the results of a scan, first perform the scan:
 
-`oscap oval eval --results results.xml /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml`{{execute}}
+`oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_rht-ccp --results results.xml /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml`{{execute}}
 
 Then, enter the following command:
 
 `oscap xccdf generate fix --fix-type ansible \
 --result-id "" \
---output stig-playbook-result.yml \
+--output ccp-playbook-result.yml \
 results.xml`{{execute}}
 
 where the results.xml file contains results of the scan obtained when scanning with the –results option and the result-id option contains an ID of the TestResult component in the file with results. In the example, above, we are using empty result-id. This is a trick to avoid specifying the full result ID.
