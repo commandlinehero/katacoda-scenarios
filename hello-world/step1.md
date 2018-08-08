@@ -9,7 +9,11 @@ Alternatively, to generate an Ansible playbook based on a profile (for example, 
 --output stig-rhel7-role.yml \
 /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml`{{execute}}
 
-To generate an Ansible playbook based on the results of a scan, enter the following command:
+If, on the other hand, you want to generate an Ansible playbook based on the results of a scan, first perform the scan:
+
+`oscap oval eval --results results.xml /usr/share/xml/scap/ssg/content/ssg-rhel7-ds.xml`{{execute}}
+
+Then, enter the following command:
 
 `oscap xccdf generate fix --fix-type ansible \
 --result-id "" \
